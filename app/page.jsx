@@ -195,11 +195,11 @@ export default function Home() {
             <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl">Join thousands of professionals who e advancing their careers with AI-powered quidance.</p>
 
             <Link href="/dashboard" passHref>
-            <Button size={"lg"}
-            variant={"secondary"}
-            className="h-11 mt-5 animate-bounce">
-              Satrt Your Journey Today <ArrowRightIcon className="ml-2 h-4 2-4"/>
-            </Button>
+              <Button size={"lg"}
+                variant={"secondary"}
+                className="h-11 mt-5 animate-bounce">
+                Start Your Journey Today <ArrowRightIcon className="ml-2 h-4 2-4" />
+              </Button>
             </Link>
           </div>
 
