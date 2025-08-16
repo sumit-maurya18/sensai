@@ -17,6 +17,7 @@ const Header = () => {
 
         <div className='flex items-center space-x-2 md:space-x-4'>
 
+          {/* {"Side links which expands on clicking when user is signed in"} */}
           <SignedIn>
             <Link href={"/dashboard"}>
               <Button variant='outline'>
@@ -28,6 +29,10 @@ const Header = () => {
 
             <DropdownMenu>
 
+              {/* {"side bar which opens as drop down"} */}
+
+              {/* {"Main drop down button which contains options"} */}
+
               <DropdownMenuTrigger asChild>
                 <Button>
                   <StarsIcon className='h-4 w-4' />
@@ -38,6 +43,8 @@ const Header = () => {
 
               <DropdownMenuContent>
 
+                {/* {"resume button"} */}
+
                 <DropdownMenuItem>
                   <Link href={"/resume"} className='flex items-center gap-2'>
                     <FileText className='h-4 w-4' />
@@ -45,12 +52,16 @@ const Header = () => {
                   </Link>
                 </DropdownMenuItem>
 
+                {/* {"cover letter button"} */}
+
                 <DropdownMenuItem>
                   <Link href={"/ai-cover-letter"} className='flex items-center gap-2'>
                     <PenBox className='h-4 w-4' />
                     <span>Cover Letter</span>
                   </Link>
                 </DropdownMenuItem>
+
+                {/* {"interview prep button button"} */}
 
                 <DropdownMenuItem>
                   <Link href={"/interview-page"} className='flex items-center gap-2'>
@@ -64,6 +75,8 @@ const Header = () => {
 
           </SignedIn>
 
+          {/* {"sign in button when user is logged out which appear at the top left in the nav bar"} */}
+
           <SignedOut>
             <SignInButton>
               <Button variant="outline">Sign In</Button>
@@ -72,13 +85,13 @@ const Header = () => {
 
           <SignedIn>
             <UserButton appearance={{
-              elements:{
-                avatarBox:'w-10 h-10',
-                userButtonPopoverCard:'shadow-xl',
-                userPreviewMainIdentifier:'font-semibold'
+              elements: {
+                avatarBox: 'w-10 h-10',
+                userButtonPopoverCard: 'shadow-xl',
+                userPreviewMainIdentifier: 'font-semibold'
               }
             }}
-            afterSignOutUrl='/'
+              afterSignOutUrl='/'
             />
           </SignedIn>
 

@@ -1,6 +1,8 @@
 import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 import { NextResponse } from 'next/server';
 
+{/* {"creating route function to enhance the security by redirecting to home on logged out condition"} */}
+
 const isProtectedRoute = createRouteMatcher([
     "/dashboard(.*)",
     "/resume(.*)",
