@@ -1,10 +1,10 @@
 import React from 'react'
 import { getUserOnboardingStatus } from '@/actions/user';
-import { redirect } from 'next/dist/server/api-utils';
+import { redirect } from 'next/navigation';
 
 const IndustryInsightspage = async () => {
 
-    const { isOnboarded } = await getUserOnboardingStatus();
+    const { isOnBoarded } = await getUserOnboardingStatus();
     
       if (!isOnBoarded) {
         redirect("/onBoarding");
